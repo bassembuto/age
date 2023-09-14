@@ -2,6 +2,11 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     direction: rtl;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -ms-transition: 1s ease;
+    -o-transition: 1s ease;
 }
 
 h1 {
@@ -12,7 +17,11 @@ h1 {
     margin-top: 50px;
 }
 
-.h11{
+.h11 {
+    color: #f00;
+}
+
+.h112 {
     color: #f00;
 }
 
@@ -20,4 +29,18 @@ h1 {
     border: 3px dashed blue;
     padding: 20px;
     margin: 100px 5% 0 5%;
+}
+
+.damod a {
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 1px 1px 5px #000;
+    display: block;
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }

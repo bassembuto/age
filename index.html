@@ -13,20 +13,42 @@
     <h1>تحويل عمرك بالسنوات إلي أيام وساعات.</h1>
 
     <div class="dash">
-            <h1 class="h11">
-                <script src="js.js"></script>
-            </h1>
-            <h1 class="h11">
-                <script>
-                    function hours(hour) {
-                        let dd = age * 8766;
-                        document.write(`عمرك بالساعات هو : ${dd} ساعة`);
-                        return dd;
-                    }
-                    hours();
-                </script>
-            </h1>
+        <h1 class="h11">
+            <script src="js.js"></script>
+        </h1>
+        <h1 class="h112">
+            <script>
+                function hours(hour) {
+                    let dd = age * 8766;
+                    document.write(`عمرك بالساعات هو : ${dd} ساعة`);
+                    return dd;
+                }
+                hours();
+            </script>
+        </h1>
     </div>
+    <div class="damod">
+        <a href="#" class="darkmod" id="darkmod" onclick="dmod()">الوضع الليلي</a>
+        <a href="#" onclick="dmmod()" class="darkmod2">الوضع النهاري</a>
+    </div>
+
+    <script>
+        let mod = document.getElementById('darkmod');
+        function dmod() {
+            document.querySelector('body').style.background = 'black';
+            document.querySelector('h1').style.color = 'white';
+            document.querySelector('.h11').style.color = 'white';
+            document.querySelector('.h112').style.color = 'white';
+            document.querySelector('.dash').style.borderColor = 'white';
+            document.querySelector('.darkmod').style.color = '#fff';
+            document.querySelector('.darkmod').style.background = '#000';
+            document.querySelector('.darkmod').style.boxShadow = '1px 1px 5px #fff';
+            document.querySelector('.darkmod2').style.color = '#000';
+            document.querySelector('.darkmod2').style.background = '#fff';
+            document.querySelector('.darkmod2').style.boxShadow = '1px 1px 5px #fff';
+        }
+    </script>
+    <script src="sc.js"></script>
 </body>
 
 </html>
